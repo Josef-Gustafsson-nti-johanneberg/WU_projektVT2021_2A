@@ -1,128 +1,428 @@
 *{
     margin: 0px;
     padding: 0px;
-    background-color: rgb(136, 136, 136);
-
+    font-family: fantasy;
+}
+body{
+    background-color: rgb(243, 243, 243);
+    /* background-image: url('/img/Bakgrund.jpg');    
+    background-size: cover;
+    background-attachment: fixed; */
+}
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+input{
+    font-size: 20px;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+}
+#mini_logga{
+    height: 40px;
+}
+#banner p{
+    margin-right: 25px;
+    font-size: 15px;
+    color: grey;
+}
+#banner a{
+    margin-right: 0px;
+    font-size: 15px;
+    color: grey;
 }
 /* Index.html */
-#banner{
-    display: flex;
-    margin-top: 0px;
-    width: 100vw;
-    height: 40px;
-    background-color:lightblue;
-    justify-content:space-between;
-    align-items: center;
+@media screen and (max-width: 1080px){
+    .hide_4mobile{
+        display: none;
+    }
+    .logga{
+        display: none;
+    }
+    #banner{
+        display: flex;
+        margin-top: 0px;
+        width: 100vw;
+        height: 40px;
+        background-color:lightblue;
+        justify-content:space-between;
+        align-items: center;
+    }
+    #banner a{
+        margin-right: 20px;
+        font-size: 10px;
+    }
+    #banner p{
+        margin-right: 0px;
+        font-size: 10px;
+        color: grey;
+    }
+    #nav{
+        display: grid;
+        height: 70px;
+        width: 100vw;
+        margin-top: 5px;
+        background-color: lightgrey;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .navLinks {
+        display: grid;
+        position:absolute; 
+        left: -100vw;
+        right: 0px;
+        height: 500px;
+        top: 110px; 
+        background-color: lightpink;
+        width: 50%;
+        transition: all .5s;
+        grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px ;
+    }
+    .navLinks li{
+        margin-top: 5px;
+        height: 30px;
+        width: 96%;
+        border: 2px solid black;
+    }
+    .navActive {
+        transform: translateX(100vW);
+    }
+    .burger {
+        margin-right: 50px;
+        cursor: pointer;
+        background-color: lightgrey;
+    }
+    .burger div {
+        width: 30px;
+        height: 5px;
+        background-color: rgb(223, 144, 70);
+        margin: 5px;
+        border-radius: 20%;
+        transition: all 0.3s;
+    }
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-7px, 6px);
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-7px,-7px);
+    }
+    #erbjudande_mobil{
+        height: 350px;
+        width: 100vw;
+        margin-top: 5px;
+        background-color: lightgreen;
+    }
+    #rekomenderade_text{
+        display: flex;
+        width: 100vw;
+        height: 60px;
+        background-color: lightgrey;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    #rekomenderade_grid{
+        display: grid;
+        width: 100vw;
+        height: 533px;
+        margin-top: 5px;
+    }
+    .rekomendation{
+        display: grid;
+        background-color: lightgrey;
+        height: 170px;
+        width: 98vw;
+        grid-template-columns: 221px 40%;
+        border: 3px solid black;
+    }
+    .rekomendation p{
+        margin-left: 20px;
+    }
+    .produkt_bild{
+        height: 170px;
+    }
+    #senast_besökta_text{
+        display: flex;
+        width: 100vw;
+        height: 60px;
+        background-color: lightgrey;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    #senast_besökta_grid{
+        display: grid;
+        width: 100vw;
+        height: 533px;
+        margin-top: 5px;
+    }
+    .senast_besökta{
+        display: grid;
+        background-color: lightgrey;
+        height: 170px;
+        width: 98vw;
+        grid-template-columns: 221px 40%;
+        border: 3px solid black;
+    }
+    .senast_besökta p{
+        margin-left: 20px;
+    }
+    footer{
+        display: grid;
+        height: 300px;
+        width: 100vw;
+        grid-template-columns: 1fr 1fr;
+        background-color: grey;}
+    #footer_vänster{
+        font-size: large;
+        display: flex;
+        font-size: large;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #footer_vänster ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 7%;
+    }
+    /* Butiker */
 
-}
-#nav{
-    display: flex;
-    height: 70px;
-    width: 100vw;
-    margin-top: 5px;
-    background-color: lightgrey;
-    align-items: center;
-}
-.navLinks {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    position:absolute; 
-    left: -100vw;
-    right: 0px;
-    height: 80vh;
-    top: 110px; 
-    background-color: lightpink;
-    align-items: center;
-    width: 40%;
-    transition: all 1s;
-}
-.navActive {
+    /* Min_sida */
 
-    transform: translateX(100vW);
-}
-.burger {
-    margin-right: 50px;
-    cursor: pointer;
-    background-color: lightgrey;
-}
-.burger div {
-    width: 30px;
-    height: 5px;
-    background-color: rgb(223, 144, 70);
-    margin: 5px;
-    border-radius: 20%;
-    transition: all 0.3s;
-}
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-7px, 6px);
-}
-.toggle .line2{
-    opacity: 0;
-}
-.toggle .line3{
-    transform: rotate(45deg) translate(-7px,-7px);
-}
-#erbjudande{
-    height: 400px;
-    width: 100vw;
-    margin-top: 5px;
-    background-color: lightgreen;
+    /* om_oss */
 
+    /* produktsida */
+    #path{
+        display: flex;
+        align-items: center;
+        height: 30px;
+        background-color: lightgrey;
+        margin-top: 5px;
+    }
+    #bild_produktsida img{
+        height: 35vh;
+        width: 100%;
+        margin-top: 5px;
+    }
+    #beskrivning{
+        height: 80px;
+        background-color: lightgrey;
+        margin-top: 5px;
+    }
+    #pris{
+        display: flex;
+        justify-content: space-between;
+        align-items:  center;
+        height: 30px;
+        background-color: lightgrey;
+        margin-top: 5px;
+    }
+    #pris p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #spec{
+        display: grid;
+        height: 350px;
+        border: 3px solid black;
+        margin-top: 5px;
+    }
 }
-#rekomenderade_text{
-    display: flex;
-    width: 100vw;
-    height: 60px;
-    background-color: lightgrey;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
-    align-items: center;
-    margin-top: 5px;
-}
-#rekomenderade_grid{
-    display: grid;
-    width: 100vw;
-    height: 700px;
-    margin-top: 5px;
-    background-color: lightgrey;
-}
-.rekomendation{
-    display: block;
-    background-color: lightgrey;
-    /* margin: 5px; */
-    height: 230px;
-}
-#senast_besökta_text{
-    display: flex;
-    width: 100vw;
-    height: 60px;
-    background-color: lightgrey;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
-    align-items: center;
-    margin-top: 5px;
-}
-#senast_besökta_grid{
-    display: grid;
-    width: 100vw;
-    height: 470px;
-    margin-top: 5px;
-    background-color: lightgrey;
-}
-.senast_besökta{
-    display: block;
-    background-color: lightgrey;
-    /* margin: 5px; */
-    height: 230px;
-}
-footer{
-display: grid;
-height: 300px;
-width: 100vw;
-grid-template-columns: 1fr 1fr;
+@media screen and (min-width: 1080px) {
+    #gridd_wrapper_main{
+        width: 1500px;
+        margin: auto;
+    }
+    #nav{
+        display: flex;
+        height: 70px;
+        width: 100%;
+        margin-top: 5px;
+        background-color: lightgrey;
+        align-items: center;
+        box-shadow: black;
+    }
+    .navLinks {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        text-decoration: none ;
+        list-style-type: none;
+        background-color: lightgrey;
+        font-size: 20px;
+    }
+    .hide{
+        display: none;
+    }
+    #banner{
+        display: flex;
+        margin-top: 0px;
+        width: 99vw;
+        height: 40px;
+        background-color:lightblue;
+        justify-content:flex-end;
+        align-items: center;
+    }
+    #banner a{
+        margin-right: 7px;
+    }
+    #erbjudande{
+        height: 400px;
+        width: 100%;
+        margin-top: 5px;
+        background-color: lightgreen;
+    }
+    #rekomenderade_text{
+        display: flex;
+        width: 100%;
+        height: 60px;
+        background-color: lightgrey;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 30px;
+        align-items: center;
+        margin-top: 5px;
+        justify-content: center;
+    }
+    #rekomenderade_grid{
+        display: grid;
+        width: 100%;
+        height: 235px;
+        margin-top: 5px;
+        background-color: lightgrey;
+        grid-auto-flow: column;
+    }
+    .rekomendation{
+        background-color: lightgrey;
+        height: 230px;
+        border: 3px solid black;
+        display: grid;
+        width: 490px;
+        grid-template-columns: 300px 40%;
+    }
+    .rekomendation p{
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    .produkt_bild{
+        height: 230px;
+    }
+    #senast_besökta_text{
+        display: flex;
+        width: 100%;
+        height: 60px;
+        background-color: lightgrey;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 30px;
+        align-items: center;
+        margin-top: 5px;
+        justify-content: center;
+    }
+    #senast_besökta_grid{
+        display: grid;
+        width: 100%;
+        height: 235px;
+        margin-top: 5px;
+        background-color: lightgrey;
+        grid-auto-flow: column;
+    }
+    .senast_besökta{
+        background-color: lightgrey;
+        height: 230px;
+        border: 3px solid black;
+        display: grid;
+        width: 490px;
+        grid-template-columns: 300px 40%;
+    }
+    .senast_besökta p{
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    footer{
+        display: grid;
+        height: 300px;
+        width: 99vw;
+        grid-template-columns: 1fr 1fr;
+        background-color: darkgray;
+        margin-top: 5px;
+    }
+    #footer_vänster{
+        font-size: large;
+    }
+    #footer_vänster ul{
+        display: grid;
+        grid-template-rows: 50px 50px 50px 50px 50px ;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+    #footer_höger{
+        display: grid;
+        grid-template-rows: 70px 70px 70px ;
+        margin-left: 70%;
+    }
+    /* Butiker */
 
-}
-#footer_vänster{
-    font-size: large;
+    /* Min_sida */
+
+    /* om_oss */
+
+    /* produktsida */
+    #path{
+        display: flex;
+        align-items: center;
+        height: 30px;
+        background-color: lightgrey;
+        margin-top: 5px;
+    }
+    #bild_produktsida{
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        height: 60vh;
+        background-color: lightgrey;
+    }
+    #beskrivning{
+        height: 80px;
+        background-color: lightgrey;
+        margin-top: 5px;
+    }
+    #pris{
+        display: flex;
+        justify-content: space-between;
+        align-items:  center;
+        height: 30px;
+        background-color: lightgrey;
+        margin-top: 5px;
+    }
+    #pris p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #spec{
+        display: grid;
+        height: 350px;
+        border: 3px solid black;
+        margin-top: 5px;
+    }
 }
