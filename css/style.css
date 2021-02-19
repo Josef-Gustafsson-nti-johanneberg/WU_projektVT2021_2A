@@ -3,12 +3,11 @@
     padding: 0px;
     font-family: fantasy;
 }
-body{
-    background-color: rgb(243, 243, 243);
-    /* background-image: url('/img/Bakgrund.jpg');    
+/* body{
+    background-image: url('/img/Bakgrund.jpg');    
     background-size: cover;
-    background-attachment: fixed; */
-}
+    background-attachment: fixed;
+} */
 a:link {
     color: black;
     background-color: transparent;
@@ -74,7 +73,7 @@ input{
         height: 70px;
         width: 100vw;
         margin-top: 5px;
-        background-color: lightgrey;
+        background-color: rgb(240, 240, 240);
         align-items: center;
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -102,7 +101,7 @@ input{
     .burger {
         margin-right: 50px;
         cursor: pointer;
-        background-color: lightgrey;
+        background-color: rgb(240, 240, 240);
     }
     .burger div {
         width: 30px;
@@ -125,13 +124,12 @@ input{
         height: 350px;
         width: 100vw;
         margin-top: 5px;
-        background-color: lightgreen;
     }
     #rekomenderade_text{
         display: flex;
         width: 100vw;
         height: 60px;
-        background-color: lightgrey;
+        background-color: rgb(240, 240, 240);
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 30px;
         align-items: center;
@@ -146,7 +144,7 @@ input{
     }
     .rekomendation{
         display: grid;
-        background-color: lightgrey;
+        background-color: rgb(240, 240, 240);
         height: 170px;
         width: 98vw;
         grid-template-columns: 221px 40%;
@@ -162,7 +160,7 @@ input{
         display: flex;
         width: 100vw;
         height: 60px;
-        background-color: lightgrey;
+        background-color: rgb(240, 240, 240);
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 30px;
         align-items: center;
@@ -177,7 +175,7 @@ input{
     }
     .senast_besökta{
         display: grid;
-        background-color: lightgrey;
+        background-color: rgb(240, 240, 240);
         height: 170px;
         width: 98vw;
         grid-template-columns: 221px 40%;
@@ -191,7 +189,8 @@ input{
         height: 300px;
         width: 100vw;
         grid-template-columns: 1fr 1fr;
-        background-color: grey;}
+        background-color: rgb(240, 240, 240);
+    }
     #footer_vänster{
         font-size: large;
         display: flex;
@@ -217,7 +216,7 @@ input{
         display: flex;
         align-items: center;
         height: 30px;
-        background-color: lightgrey;
+        background-color: rgb(240, 240, 240);
         margin-top: 5px;
     }
     #bild_produktsida img{
@@ -227,7 +226,7 @@ input{
     }
     #beskrivning{
         height: 80px;
-        background-color: lightgrey;
+        background-color: rgb(240, 240, 240);
         margin-top: 5px;
     }
     #pris{
@@ -235,7 +234,7 @@ input{
         justify-content: space-between;
         align-items:  center;
         height: 30px;
-        background-color: lightgrey;
+        background-color: rgb(240, 240, 240);
         margin-top: 5px;
     }
     #pris p{
@@ -244,9 +243,31 @@ input{
     }
     #spec{
         display: grid;
-        height: 350px;
+        height: 400px;
         border: 3px solid black;
         margin-top: 5px;
+        grid-template-columns: 1fr 1fr;
+    }
+    #spec_text{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        background-color: rgb(240, 240, 240);
+        margin-top: 5px;
+    }
+    h2{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #spec b{
+        font-size: 15px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-bottom: 2px dotted grey;
+
+    }
+    #spec p{
+        font-size: 15px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-bottom: 2px dotted grey;
     }
 }
 @media screen and (min-width: 1080px) {
@@ -259,9 +280,8 @@ input{
         height: 70px;
         width: 100%;
         margin-top: 5px;
-        background-color: lightgrey;
+        background-color: rgb(240, 240, 240);
         align-items: center;
-        box-shadow: black;
     }
     .navLinks {
         display: flex;
@@ -270,7 +290,7 @@ input{
         width: 100%;
         text-decoration: none ;
         list-style-type: none;
-        background-color: lightgrey;
+        background-color: rgb(240, 240, 240);
         font-size: 20px;
     }
     .hide{
@@ -292,13 +312,12 @@ input{
         height: 400px;
         width: 100%;
         margin-top: 5px;
-        background-color: lightgreen;
     }
     #rekomenderade_text{
         display: flex;
         width: 100%;
         height: 60px;
-        background-color: lightgrey;
+        background-color: rgb(240, 240, 240);
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 30px;
         align-items: center;
@@ -308,13 +327,13 @@ input{
     #rekomenderade_grid{
         display: grid;
         width: 100%;
-        height: 235px;
+        height: 236px;
         margin-top: 5px;
-        background-color: lightgrey;
+        background-color: rgb(240, 240, 240);
         grid-auto-flow: column;
     }
     .rekomendation{
-        background-color: lightgrey;
+        background-color: rgb(240, 240, 240);
         height: 230px;
         border: 3px solid black;
         display: grid;
@@ -332,7 +351,7 @@ input{
         display: flex;
         width: 100%;
         height: 60px;
-        background-color: lightgrey;
+        background-color: rgb(240, 240, 240);
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 30px;
         align-items: center;
@@ -342,18 +361,19 @@ input{
     #senast_besökta_grid{
         display: grid;
         width: 100%;
-        height: 235px;
+        height: 236px;
         margin-top: 5px;
-        background-color: lightgrey;
+        background-color: rgb(240, 240, 240);
         grid-auto-flow: column;
     }
     .senast_besökta{
-        background-color: lightgrey;
+        background-color: rgb(240, 240, 240);
         height: 230px;
         border: 3px solid black;
         display: grid;
         width: 490px;
         grid-template-columns: 300px 40%;
+        margin-left: 2px;
     }
     .senast_besökta p{
         font-size: 25px;
@@ -424,5 +444,27 @@ input{
         height: 350px;
         border: 3px solid black;
         margin-top: 5px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #spec_text{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        background-color: lightgrey;
+        margin-top: 5px;
+    }
+    h2{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #spec b{
+        font-size: 15px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-bottom: 2px dotted grey;
+
+    }
+    #spec p{
+        font-size: 15px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-bottom: 2px dotted grey;
     }
 }
