@@ -42,6 +42,7 @@ input{
     font-size: 15px;
     color: grey;
 }
+li{list-style: none;}
 /* Index.html */
 .hide_4mobile{
 display: none;
@@ -150,7 +151,7 @@ display: none;
     border: 3px solid darkgray;
 }
 .rekomendation p{
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .produkt_bild{
     height: 170px;
@@ -181,23 +182,29 @@ display: none;
     border: 3px solid darkgray;
 }
 .senast_besökta p{
-    margin-left: 20px;
+    margin-left: 10px;
 }
 footer{
     display: grid;
-    height: 300px;
+    height: 500px;
     width: 100vw;
     grid-template-columns: 1fr 1fr;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(212, 212, 212);
     margin-top: 5px;
+    border-top: rgb(94, 94, 94) solid 2px;
+    grid-template-areas: 
+    "li so"
+    "li so"
+    "li so"
+    "li so"
+    ;
 }
-#footer_vänster{
-    font-size: large;
-    display: flex;
-    font-size: large;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+#footer_höger{
+    grid-area: so;
+}
+#footer ul li:nth-child(1){
+    font-size: 25px;
+    font-weight: bolder;
 }
 #footer_vänster ul{
     display: flex;
@@ -236,10 +243,12 @@ header{
 .minsida_rubrik{
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: rgb(240, 240, 240);
     margin-top: 5px;
 }
 #beställningar ul li{
+    width: 100%;
     border-bottom: darkgray dotted;
     display: grid;
     grid-template-areas: 
@@ -264,6 +273,7 @@ header{
 #önnskelistor{
     margin-bottom: 100px;
 }
+
 /* om_oss */
 
 /* produktsida */
@@ -430,23 +440,21 @@ h2{
         margin-left: 10px;
     }
     footer{
-        background-color: darkgray;
+        display: flex;
+        justify-content: space-between;
+        grid-template-columns: initial;
         width: 99vw;
+        height: 300px;
     }
-    #footer_vänster{
-        align-items: initial;
-        justify-content: flex-start;
-    }
-    #footer_vänster ul{
+    #footer ul{
         display: grid;
-        grid-template-rows: 50px 50px 50px 50px 50px ;
+        grid-template-rows: 30px 30px 30px 30px 30px ;
         margin-left: 10%;
-        margin-top: 2%;
+        margin-top: 10px;
     }
     #footer_höger{
         display: grid;
         grid-template-rows: 70px 70px 70px ;
-        margin-left: 70%;
     }
     /* Butiker */
 
@@ -454,12 +462,13 @@ h2{
     #beställningar ul li{
         border-right: dotted grey;
         border-top: dotted gray;
+        grid-template-columns: 210px 27% 30%;
     }
     #min_sida_beställningar{
         display: flex;
     }
     .order_bild{
-        height: 100px;
+        height: 160px;
         grid-area: bi;
     }
     .kvitto{
@@ -468,7 +477,9 @@ h2{
     .minsida_rubrik{
         height: 50px;
     }
-
+    .minsida_rubrik{
+        font-size: 20px;
+    }
 
     /* om_oss */
 
