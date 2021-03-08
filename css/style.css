@@ -8,6 +8,13 @@
     background-size: cover;
     background-attachment: fixed;
 } */
+@font-face{
+    font-family: "my_font";
+    src:url("\misc\quantico.bold.ttf");
+}
+p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 a:link {
     color: black;
     background-color: transparent;
@@ -275,6 +282,28 @@ header{
 }
 
 /* om_oss */
+#vi_ar_teknikgiganten img{
+    width: 100vw;
+}
+#vi_ar_teknikgiganten p{
+    position: relative;
+    color: rgb(255, 94, 0);
+    top: -70px; 
+    margin-left: 2%;  
+    font-size:35px;
+    transform: rotate(-5deg);
+}
+.om_oss_text{
+    font-weight:900;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: blue;
+    font-size: 30px;
+}
+#margin_0{
+    margin-top: -40px;
+}
+
+
 
 /* produktsida */
 #path{
