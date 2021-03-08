@@ -15,6 +15,10 @@
 p{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
 a:link {
     color: black;
     background-color: transparent;
@@ -282,6 +286,7 @@ header{
 }
 
 /* om_oss */
+
 #vi_ar_teknikgiganten img{
     width: 100vw;
 }
@@ -319,7 +324,7 @@ header{
     margin-top: 5px;
 }
 #beskrivning{
-    height: 80px;
+    height: 220px;
     background-color: rgb(240, 240, 240);
     margin-top: 5px;
 }
@@ -444,7 +449,7 @@ h2{
         grid-template-columns: 260px 40%;
     }
     .rekomendation p{
-        font-size: 25px;
+        font-size: 20px;
         margin-left: 10px;
     }
     .produkt_bild{
@@ -465,7 +470,7 @@ h2{
         margin-left: 2px;
     }
     .senast_besökta p{
-        font-size: 25px;
+        font-size: 20px;
         margin-left: 10px;
     }
     footer{
@@ -511,7 +516,29 @@ h2{
     }
 
     /* om_oss */
-
+    #vi_ar_teknikgiganten{
+        height: 635px;
+    }
+    #vi_ar_teknikgiganten img:nth-child(2){
+        width: 100%;
+        margin-top: 5px;
+    }
+    #vi_ar_teknikgiganten p{
+        top: -210px;
+        left: 20%;
+        font-size: 100px;
+    }
+    #margin_0{
+        margin-top: initial;
+    }
+    #om_oss_info{
+        margin-top: 5px;
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 20px;
+        grid-template-rows: 50px 200px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     /* produktsida */
     #path{
         height: 30px;
@@ -532,4 +559,13 @@ h2{
         height: 350px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    #beskrivning{
+        height: 120px; 
+    }
+    /* #spec p:nth-child(2n+1){
+    border-right: solid 50px;
+    } */
+    #spec p:nth-child(4n+2){
+        border-right: dotted 3px lightgray;
+        }
 }
