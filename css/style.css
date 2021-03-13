@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    /* font-family: fantasy; */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /* body{
     background-image: url('/img/Bakgrund.jpg');    
@@ -11,12 +11,6 @@
 @font-face{
     font-family: "my_font";
     src:url("\misc\quantico.bold.ttf");
-}
-p{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-a{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 a:link {
     color: black;
@@ -74,11 +68,13 @@ li{
 #banner a{
     margin-right: 20px;
     font-size: 10px;
+    font-weight: 800;
 }
 #banner p{
     margin-right: 0px;
     font-size: 10px;
     color: grey;
+    font-weight: 800;
 }
 .spacer{
     background-color: rgb(201, 201, 201);
@@ -116,7 +112,7 @@ li{
 }
 .navLinks li a{
     font-size: 17px;
-    font-weight: ´450;
+    font-weight: 300;
 }
 .navActive {
     transform: translateX(100vW);
@@ -370,7 +366,7 @@ footer{
     margin-top: 5px;
 }
 #beskrivning{
-    height: 250px;
+    height: 280px;
     background-color: rgb(250, 250, 250);
     margin-top: 5px;
     padding: 10px;
@@ -404,17 +400,12 @@ footer{
     background-color: rgb(250, 250, 250);
     margin-top: 5px;
 }
-h2{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 #spec b{
     font-size: 15px;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border-bottom: 2px dotted grey;
 }
 #spec p{
     font-size: 15px;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border-bottom: 2px dotted grey;
 }
 @media screen and (min-width: 1080px) {
@@ -465,6 +456,11 @@ h2{
         height: initial;
         width: initial;
     }
+    .navLinks li a{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+    }
     .hide{
         display: none;
     }
@@ -480,9 +476,11 @@ h2{
     #banner a{
         margin-right: 7px;
         font-size: initial;
+        font-weight: initial;
     }
     #banner p{
         font-size: initial;
+        font-weight: initial;
         margin-right: 10px;
     }
     #erbjudande{
@@ -615,6 +613,12 @@ h2{
     #spec{
         height: 350px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #spec b{
+        font-size: 16px;
+    }
+    #spec p{
+        font-size: 16px;
     }
     #beskrivning{
         height: 120px; 
