@@ -17,7 +17,6 @@ p{
 }
 a{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
 a:link {
     color: black;
@@ -53,7 +52,9 @@ input{
     font-size: 15px;
     color: grey;
 }
-li{list-style: none;}
+li{
+    list-style: none;
+}
 /* Index.html */
 .hide_4mobile{
 display: none;
@@ -224,7 +225,43 @@ footer{
     margin-top: 7%;
 }
 /* Butiker */
-
+#butiker_intro{
+    margin-top: 5px;
+    background-color: rgb(240, 240, 240);
+}
+#våra_butiker{
+    display: flex;
+    flex-direction: column;
+}
+.butiker{
+    height: 150px;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+    grid-template-rows: 30px 20px;
+    grid-template-areas: 
+    "bi bu bu"
+    "bi öp öp"
+    "bi u1 u2"
+    ;
+}
+#butiker ul{
+    grid-area: ti;
+}
+.butik_bild{
+    width: 40px;
+    grid-area: bi;
+}
+.stad{
+    font-size: 20px;
+    font-weight: 600;
+    grid-area: bu;
+    letter-spacing: 2px;
+}
+.oppettider{
+    grid-area: öp;
+    font-weight: 600;
+}
     /* Min_sida */
 header{
     display: flex;
@@ -250,7 +287,6 @@ header{
 #beställningar{
     margin-top: 5px;
 }
-
 .minsida_rubrik{
     display: flex;
     align-items: center;
@@ -284,7 +320,6 @@ header{
 #önnskelistor{
     margin-bottom: 100px;
 }
-
 /* om_oss */
 
 #vi_ar_teknikgiganten img{
@@ -307,9 +342,6 @@ header{
 #margin_0{
     margin-top: -40px;
 }
-
-
-
 /* produktsida */
 #path{
     display: flex;
@@ -514,7 +546,6 @@ h2{
     .minsida_rubrik{
         font-size: 20px;
     }
-
     /* om_oss */
     #vi_ar_teknikgiganten{
         height: 635px;
@@ -567,5 +598,5 @@ h2{
     } */
     #spec p:nth-child(4n+2){
         border-right: dotted 3px lightgray;
-        }
+    }
 }
