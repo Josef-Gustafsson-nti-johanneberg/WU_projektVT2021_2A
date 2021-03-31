@@ -3,11 +3,6 @@
     padding: 0px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-/* body{
-    background-image: url('/img/Bakgrund.jpg');    
-    background-size: cover;
-    background-attachment: fixed;
-} */
 a:link {
     color: black;
     background-color: transparent;
@@ -40,7 +35,7 @@ input{
 #banner a{
     margin-right: 0px;
     font-size: 15px;
-    color: grey;
+    color: #808080;
 }
 li{
     list-style: none;
@@ -63,13 +58,14 @@ li{
 #banner a{
     margin-right: 20px;
     font-size: 10px;
-    font-weight: 800;
+    font-weight: 900;
+    color: rgb(78, 78, 78);
 }
 #banner p{
     margin-right: 0px;
     font-size: 10px;
-    color: grey;
-    font-weight: 800;
+    color: rgb(78, 78, 78);
+    font-weight: 900;
 }
 .spacer{
     background-color: rgb(201, 201, 201);
@@ -136,7 +132,7 @@ li{
 }
 footer{
     display: grid;
-    height: 550px;
+    height: 790px;
     width: 100vw;
     grid-template-columns: 1fr 1fr;
     background-color: rgb(212, 212, 212);
@@ -155,6 +151,8 @@ footer{
 #footer ul li:nth-child(1){
     font-size: 25px;
     font-weight: bolder;
+}#footer ul li{
+    padding-bottom: 10px;
 }
 #footer ul{
     padding-left: 5px;
@@ -166,7 +164,6 @@ footer{
 }
 /* Index.html */
 #erbjudande_mobil{
-    height: 350px;
     width: 100vw;
     margin-top: 5px;
 }
@@ -181,7 +178,7 @@ footer{
     height: 170px;
     width: 98vw;
     grid-template-columns: 221px 40%;
-    border: 3px solid darkgray;
+    border: 3px solid #a9a9a9;
 }
 .rekomendation p{
     margin-left: 10px;
@@ -317,7 +314,7 @@ footer{
 .kvitto{
     grid-area: vi;
 }
-#onnskelistor ul li a{
+#onnskelistor li a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-bottom: gray dotted;
@@ -360,7 +357,6 @@ footer{
     margin-top: 5px;
 }
 #bild_produktsida img{
-    height: 35vh;
     width: 100%;
     margin-top: 5px;
 }
@@ -402,6 +398,11 @@ footer{
 #spec b{
     font-size: 15px;
     border-bottom: 2px dotted grey;
+}
+
+#spec :nth-child(27),
+#spec :nth-child(28){
+    border-bottom: none;
 }
 #spec p{
     font-size: 15px;
@@ -475,24 +476,22 @@ footer{
     #banner a{
         margin-right: 7px;
         font-size: initial;
-        font-weight: initial;
     }
     #banner p{
         font-size: initial;
-        font-weight: initial;
         margin-right: 10px;
     }
     footer{
         display: flex;
         justify-content: space-between;
-        grid-template-columns: initial;
-        width: 99vw;
+        width: 94%;
         height: 300px;
+        padding-left: 6%;
     }
     #footer ul{
         display: grid;
+        width: 300px;
         grid-template-rows: 30px 30px 30px 30px 30px ;
-        margin-left: 10%;
         margin-top: 10px;
     }
     #footer_hoger{
@@ -507,10 +506,6 @@ footer{
     }
     #erbjudande_webb{
         display: initial;
-    }
-    #rekomenderade_text{
-        margin-top: 5px;
-        width: 100%;
     }
     #rekomenderade_grid{
         width: 100%;
@@ -528,9 +523,6 @@ footer{
     }
     .produkt_bild{
         height: 200px;
-    }
-    #senast_besokta_text{
-        width: 100%;
     }
     #senast_besokta_grid{
         width: 100%;
@@ -552,13 +544,15 @@ footer{
         display: flex;
     }
     #vara_butiker_grid img{
-        width: 45%;
+        width: 52%;
     }
     #vara_butiker{
         width: 50%;
     }
     #butiker_intro{
-        width: 40%;
+        width: 48%;
+        font-size: 18px;
+        color: rgb(31, 31, 31);
     }
     #vara_butiker{
         width: 600px;
@@ -571,7 +565,7 @@ footer{
     }
     #karta_till_oss{
         grid-area: bi;
-        width: 99%;
+        width: 97%;
         height: 390px;
     }
     #hitta_till_oss{
@@ -658,4 +652,10 @@ footer{
     #spec p:nth-child(4n+2){
         border-right: dotted 3px lightgray;
     }
+    #spec :nth-child(25),
+    #spec :nth-child(26){
+        border-bottom: none;
+        margin-bottom: -3px;
+    }
+
 }
