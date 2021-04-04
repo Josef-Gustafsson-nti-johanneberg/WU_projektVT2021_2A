@@ -399,7 +399,6 @@ footer{
     font-size: 15px;
     border-bottom: 2px dotted grey;
 }
-
 #spec :nth-child(27),
 #spec :nth-child(28){
     border-bottom: none;
@@ -460,9 +459,9 @@ footer{
         width: initial;
     }
     .navLinks li a{
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(58, 58, 58);
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(58, 58, 58);
     }
     #banner{
         display: flex;
@@ -657,5 +656,4 @@ footer{
         border-bottom: none;
         margin-bottom: -3px;
     }
-
 }
