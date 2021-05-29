@@ -151,7 +151,8 @@ footer{
 #footer ul li:nth-child(1){
     font-size: 25px;
     font-weight: bolder;
-}#footer ul li{
+}
+#footer ul li{
     padding-bottom: 10px;
 }
 #footer ul{
@@ -170,21 +171,31 @@ footer{
 #rekomenderade_grid{
     display: grid;
     width: 100vw;
-    height: 533px;
+    height: 563px;
     margin-top: 5px;
 }
 .rekomendation{
     display: grid;
+    grid-template-areas: 
+    "bi h"
+    "bi p";
     height: 170px;
     width: 98vw;
     grid-template-columns: 221px 40%;
-    border: 3px solid #a9a9a9;
+    box-shadow: 5px 5px 5px grey;
+    border: solid rgb(173, 173, 173) 1px;
+    margin-top: 15px;
 }
 .rekomendation p{
     margin-left: 10px;
 }
+.rekomendation h2{
+    margin-left: 10px;
+    font-size: 18px;
+}
 .produkt_bild{
     height: 170px;
+    grid-area: bi;
 }
 #senast_besokta_text{
     display: flex;
@@ -199,7 +210,7 @@ footer{
 #senast_besokta_grid{
     display: grid;
     width: 100vw;
-    height: 533px;
+    height: 563px;
     margin-top: 5px;
 }
 .senast_besokta{
@@ -207,10 +218,19 @@ footer{
     height: 170px;
     width: 98vw;
     grid-template-columns: 221px 40%;
-    border: 3px solid darkgray;
+    box-shadow: 5px 5px 5px grey;
+    border: solid rgb(173, 173, 173) 1px;
+    margin-top: 15px;
+    grid-template-areas: 
+    "bi h"
+    "bi p";
 }
 .senast_besokta p{
     margin-left: 10px;
+}
+.senast_besokta h2{
+    margin-left: 10px;
+    font-size: 18px;
 }
 /* Butiker */
 #butiker_intro{
@@ -224,7 +244,7 @@ footer{
 }
 .butiker{
     height: 130px;
-    margin-top: 5px;
+    margin-top: 15px;
     display: grid;
     grid-template-columns: 30% 35% 35%;
     grid-template-rows: 30px 20px;
@@ -233,13 +253,17 @@ footer{
     "bi öp öp"
     "bi u1 u2"
     ;
+    box-shadow: 5px 5px 5px grey;
+    border: solid rgb(173, 173, 173) 1px;
 }
 #butiker ul{
     grid-area: ti;
 }
 .butik_bild{
     width: 120px;
+    height: 100px ;
     grid-area: bi;
+    margin-top: 20px;
 }
 .stad{
     font-size: 20px;
@@ -262,18 +286,17 @@ footer{
     height: 40px;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(250, 250, 250);
     margin-top: 5px;
 }
 #velkommen p{
     margin-right: 10px;
-    margin-left: 10px;
-    font-weight: 600;
+    font-weight: 100;
+    color: rgb(83, 83, 83);
+    padding-left: 10px;
 }
 #min_sida_rubrik{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: initial;
+    padding-left: 10px;
 }
 #bestallningar{
     margin-top: 5px;
@@ -297,31 +320,28 @@ footer{
     padding-bottom: 5px;
     color: rgb(100, 100, 100);
 }
-#bestallningar ul li{
+#minsida_section{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    row-gap: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.cards{
+    height: 220px;
     width: 100%;
-    border-bottom: darkgray dotted;
-    display: grid;
-    grid-template-areas: 
-    "bi na na"
-    "bi aa vi"
-    ;
-    grid-template-columns: 130px 1fr 1fr;
+    box-shadow: 5px 5px 5px grey;
+    border: solid rgb(173, 173, 173) 1px;
 }
-.order_bild{
-    height: 100px;
-    grid-area: bi;
+.cards > *{
+    padding-left: 10px;
+    padding-top: 10px;
 }
-.kvitto{
-    grid-area: vi;
-}
-#onnskelistor li a{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-bottom: gray dotted;
-    margin-top: 5px;
-}
-#onnskelistor{
-    padding-left: 5px;
+.cards img{
+    width: 60px;
+    margin-left: 80%;
+    margin-top: 70px;
 }
 /* om_oss */
 #vi_ar_teknikgiganten img{
@@ -399,13 +419,16 @@ footer{
     font-size: 15px;
     border-bottom: 2px dotted grey;
 }
-#spec :nth-child(27),
+#spec :nth-child(29),
 #spec :nth-child(28){
     border-bottom: none;
 }
 #spec p{
     font-size: 15px;
     border-bottom: 2px dotted grey;
+}
+.hidea{
+    display: none;
 }
 @media screen and (min-width: 1080px) {
     #gridd_wrapper_main{
@@ -510,6 +533,7 @@ footer{
         width: 100%;
         height: 206px;
         grid-auto-flow: column;
+        padding-bottom: 15px;
     }
     .rekomendation{
         height: 200px;
@@ -520,6 +544,9 @@ footer{
         font-size: 20px;
         margin-left: 10px;
     }
+    .rekomendation h2{
+        font-size: 22px;
+    }
     .produkt_bild{
         height: 200px;
     }
@@ -527,6 +554,7 @@ footer{
         width: 100%;
         height: 206px;
         grid-auto-flow: column;
+        padding-bottom: 15px;
     }
     .senast_besokta{
         height: 200px;
@@ -538,15 +566,20 @@ footer{
         font-size: 20px;
         margin-left: 10px;
     }
+    .senast_besokta h2{
+        font-size: 22px;
+    }
     /* Butiker */
     #vara_butiker_grid{
         display: flex;
     }
     #vara_butiker_grid img{
         width: 52%;
+        box-shadow: 5px 5px 5px grey;
+        border: solid rgb(173, 173, 173) 1px;
     }
-    #vara_butiker{
-        width: 50%;
+    .butiker{
+        height: 150px;
     }
     #butiker_intro{
         width: 48%;
@@ -554,7 +587,7 @@ footer{
         color: rgb(31, 31, 31);
     }
     #vara_butiker{
-        width: 600px;
+        width: 100%;
     }
     .oppettider_1{
         grid-area: u1;
@@ -562,41 +595,55 @@ footer{
     .oppettider_2{
         grid-area: u2;
     }
+    .butik_bild{
+        margin-top: 10px;
+        width: 160px;
+        height: 120px ;
+        padding-left: 10px;
+    }
     #karta_till_oss{
         grid-area: bi;
         width: 97%;
-        height: 390px;
+        height: 495px;
+        box-shadow: 5px 5px 5px grey;
+        border: solid rgb(173, 173, 173) 1px;
     }
     #hitta_till_oss{
         display: grid;
         grid-auto-flow: column;
         grid-template-areas: 
         "bi öp";
+        height: 510px;
+        padding-top: 20px;
     }
     /* Min_sida */
-    #bestallningar ul li{
-        border-right: dotted grey;
-        border-top: dotted gray;
-        grid-template-columns: 210px 27% 30%;
-    }
-    #min_sida_bestallningar{
-        display: flex;
-    }
-    .order_bild{
-        height: 160px;
-        grid-area: bi;
-    }
-    .kvitto{
-        grid-area: vi;
-    }
     .rubrik{
         height: 50px;
         font-size: 50px;
         letter-spacing: 3px;
     }
+    #minsida_section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 30px;
+    }
+    .cards{
+        height: 290px;
+        width: 730px;
+    }
+    .cards img{
+        width: 160px;
+        margin-left: 550px;
+        margin-top: 40px;
+    }
     /* om_oss */
     #vi_ar_teknikgiganten{
         height: 635px;
+    }
+    #vi_ar_teknikgiganten img{
+        box-shadow: 5px 5px 5px grey;
+        border: solid rgb(173, 173, 173) 1px;
     }
     #vi_ar_teknikgiganten img:nth-child(2){
         width: 100%;
@@ -634,6 +681,8 @@ footer{
         height: initial;
         width: initial;
         margin-top: initial;
+        box-shadow: 5px 5px 5px grey;
+        border: solid rgb(173, 173, 173) 1px;
     }
     #spec{
         height: 350px;

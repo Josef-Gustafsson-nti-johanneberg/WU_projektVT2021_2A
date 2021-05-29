@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +10,9 @@
 </head>
 <body>
     <div id="banner">
-        <a href="/index.html"><img class="hide" id="mini_logga" src="img/Logga_medtext_utan_bakgrund.png" alt="Logga"></a>
+        <a href="/index.html"><img class="hide" id="mini_logga" src="img/logga_medtext_utan_bakgrund.png" alt="Logga"></a>
         <p>kundtjänst</p>
-        <p>0 Års erfarenhet</p>
+        <p>1 Års erfarenhet</p>
         <p>Alltid Fri Frakt</p>
         <a href="/min_sida.html">Min sida</a>
     </div>
@@ -26,7 +26,7 @@
             <li class="hide_4mobile"><a class=logga href="/index.html"><img class="logga" src="img/logga_medtext_utan_bakgrund.png" alt="Teknikgiganten logga"></a></li>
             <li><a href="produktsida.html">Datorer</a></li>
             <li class="hide_4mobile"><input type="text" placeholder="Sök bland 20 351 produkter"></li>
-            <li ><a href="om_oss.html">Om Oss</a></li>
+            <li><a href="om_oss.html">Om Oss</a></li>
             <li><a href="butiker.html">Våra Butiker</a></li>
             <li class="hide"><a href="#">.</a></li>
             <li class="hide"><a href="#">Lorem</a></li>
@@ -40,92 +40,46 @@
         </ul>
         <input class="hide" type="text" placeholder="Sök bland 20 351 produkter">
     </nav>
-    <main id="gridd_wrapper_main">    
+    <main id="gridd_wrapper_main">  
+        <div id="path">
+            <p>Hem > Minsida</p>
+        </div>  
         <header>
-            <h1 class="rubrik">Min sida</h1>
+            <h1 id="min_sida_rubrik" class="rubrik">Min sida</h1>
         </header>
         <div id="velkommen">
-            <p>Välkomen Josef</p>
-            <p>Logga ut</p>
+            <p>Inloggad som: Josef Josefsson</p>
         </div>
-        <div id="min_sida_rubrik">
-            <h2 class="underrubrik">Dina beställningar</h2>
-        </div>
-        <div id="bestallningar">
-            <ul id="min_sida_bestallningar">
-                <li> 
-                    <img class="order_bild" src="img/produkt_bild_dator.jpg" alt="Mac">
-                    <b>Apple Mac Book Pro(2020) - 13,3"</b>
-                    <p>Bestäld 20-04/5 <br> Levererad 20-04/12</p> 
-                    <a class="kvitto" href="#">Visa kvitto</a>
-                </li>
-                <li>
-                    <img class="order_bild" src="img/produkt_bild_kamera.jpg" alt="Kamera bild">
-                    <b>Sony DSC RX100 Mark 7 kompaktkamera</b>
-                    <p>Bestäld 20-05/13 <br> Levererad 20-05/15</p> 
-                    <a class="kvitto" href="#">Visa kvitto</a>
-                </li>
-                <li>
-                    <img class="order_bild" src="img/produktbild_router.jpg" alt="router bild">
-                    <b>ASUS RT-AC68U</b>
-                    <p>Bestäld 20-05/25 <br> Levererad 20-05/30</p> 
-                    <a class="kvitto" href="#">Visa kvitto</a>
-                </li>
-            </ul>
-        </div>
-        <div class="spacer">
-        </div>
-        <h2 class="underrubrik">Dina önnskelistor</h2>
-        <ul id="onnskelistor">
-            <li>
-                <a href="#">
-                    <strong>Datorbygge</strong>
-                    <p>Skapad 2020-05/04</p>
-                    <p>20 produkter</p>
-                    <p>Pris 20 999kr</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <strong>Wifi setup</strong>
-                    <p>Skapad 2020-06/30</p>
-                    <p>10 Produkter</p>
-                    <p>Pris 7999Kr</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <strong>Datorbygge</strong>
-                    <p>Skapad 2020-05/04</p>
-                    <p>20 produkter</p>
-                    <p>Pris 20 999kr</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <strong>Wifi setup</strong>
-                    <p>Skapad 2020-06/30</p>
-                    <p>10 Produkter</p>
-                    <p>Pris 7999Kr</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <strong>Datorbygge</strong>
-                    <p>Skapad 2020-05/04</p>
-                    <p>20 produkter</p>
-                    <p>Pris 20 999kr</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <strong>Wifi setup</strong>
-                    <p>Skapad 2020-06/30</p>
-                    <p>10 Produkter</p>
-                    <p>Pris 7999Kr</p>
-                </a>
-            </li>
-        </ul>
+        <section id="minsida_section">
+            <a href="#">
+                <article class="cards">
+                    <h2>Min profil</h2>
+                    <p>Ändra adreser, betalningsmetoder och lösenord</p>
+                    <img src="img/minprofil.png" alt="min profil bild">
+                </article>
+            </a>
+            <a href="#">
+                <article class="cards">
+                    <h2>Mina ordrar</h2>
+                    <p>Kolla vart ditt paket är eller kolla på tidigare ordrar</p>
+                    <img src="img/odrar.png" alt="ordrar bild">
+                </article>
+            </a>
+            <a href="#">
+                <article class="cards">
+                    <h2>Kundservice</h2>
+                    <p>Missnöjd med någon produkt?</p>
+                    <img src="img/kundservice.png" alt="kundservice bild">
+                </article>
+            </a>
+            <a href="#">
+                <article class="cards">
+                    <h2>Garantiärende</h2>
+                    <p>Fel på din produkt?</p>
+                    <img src="img/garanti.png" alt="garanti bild">
+                </article>
+            </a>
+        </section>
         <div class="spacer ">
         </div>
     </main>
@@ -157,11 +111,12 @@
             <li><a href="#">Kundservice</a></li>
             <li><a href="#">Frågot och svar</a></li>
         </ul>
-        <div id="footer_hoger">
+        <section id="footer_hoger">
+            <h2 class="hidea">social media</h2>
             <img src="img/twitter.png" alt="Twitter användarnamn">
             <img src="img/instagram.png" alt="Instagram användarnamn">
             <img src="img/facebook.png" alt="Facebook användarnamn">
-        </div>
+        </section>
     </footer>
     <script src="js/script.js"></script>
 </body>
